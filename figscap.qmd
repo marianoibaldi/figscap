@@ -1,0 +1,22 @@
+---
+title: "figscap"
+format:
+  pdf:
+    lof: True
+---
+
+## Intro
+
+Some text @fig-placeholder1. 
+
+Some text @fig-placeholder2.
+
+Some text @fig-placeholder3.
+
+Some text {{< var vars.ttx >}}.
+
+![{{< lipsum 1 >}}]({{< placeholder 400 200 >}}){#fig-placeholder1 fig-scap="Short text"}
+
+![{{< lipsum 1 >}}]({{< placeholder 400 200 >}}){#fig-placeholder2 fig-scap='Short text {{< var vars.ttx >}}'}
+
+![{{< lipsum 1 >}}]({{< placeholder 400 200 >}}){#fig-placeholder3 fig-scap="Short text {{< var vars.ttx >}}"}
